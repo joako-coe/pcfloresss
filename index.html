@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .font-title { font-family: 'Syne', sans-serif; }
+    </style>
+    <title>PCF | Servicios Informáticos</title>
+</head>
+
+<body class="bg-zinc-950 text-white bg-[url('img/Fondo.jpeg')] bg-cover bg-center bg-no-repeat bg-fixed relative">
+
+<!-- Capa oscura global para dar el mismo tono y color que en "Por qué elegirnos" -->
+<div class="absolute inset-0 bg-zinc-950/70 backdrop-blur-[1px] pointer-events-none z-0"></div>
+
+<div class="relative z-10 flex flex-col min-h-screen">
+
+<header class="sticky top-0 z-50 bg-emerald-600 shadow-md">
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-3">
+      <a href="#Inicio" class="flex items-center gap-3">
+        <div class="h-11 w-11 rounded-xl overflow-hidden bg-white border border-white/40 p-0.5 flex-shrink-0 flex items-center justify-center">
+          <img src="img/logo-nuevo.jpeg" alt="PCF Logo" class="h-full w-full object-contain" />
+        </div>
+      </a>
+      
+      <button id="menu-btn" class="text-white text-2xl md:hidden focus:outline-none z-50 cursor-pointer">
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+      </button>
+
+      <nav id="menu" class="fixed inset-0 top-[69px] bg-emerald-600 translate-x-full transition-transform duration-300 ease-in-out md:static md:translate-x-0 md:bg-transparent flex flex-col md:flex-row items-center justify-center md:justify-end gap-8 text-xl md:text-base font-medium text-white h-[calc(100vh-69px)] md:h-auto w-full md:w-auto">
+        <ul class="flex flex-col md:flex-row items-center gap-8">
+          <li><a href="#Inicio" class="nav-link hover:text-emerald-100 transition-colors">Inicio</a></li>
+          <li><a href="#Servicios" class="nav-link hover:text-emerald-100 transition-colors">Servicios</a></li>
+          <li><a href="#Trabajos" class="nav-link hover:text-emerald-100 transition-colors">Trabajos</a></li>
+          <li><a href="#Quiénes-somos" class="nav-link hover:text-emerald-100 transition-colors">Por qué elegirnos</a></li>
+          <li>
+            <a href="https://wa.me/5491136970130" target="_blank" class="nav-link" aria-label="Contactar por WhatsApp">
+              <button class="bg-white text-emerald-600 text-xl w-10 h-10 rounded-full cursor-pointer hover:bg-emerald-50 transition-colors border border-transparent flex items-center justify-center">
+                <i class="fa-brands fa-whatsapp"></i>
+              </button>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>    
+  </header>
+
+<section id="Inicio" class="scroll-mt-20 px-6 py-24 border-b border-white/10">
+  <div class="mx-auto max-w-3xl flex flex-col items-center text-center gap-12">
+    <div>
+      <div class="h-24 w-24 rounded-2xl overflow-hidden bg-white p-1 border border-white/20 mx-auto mb-6 flex items-center justify-center shadow-lg">
+        <img src="img/logo-nuevo.jpeg" alt="PCF Logo" class="h-full w-full object-contain" />
+      </div>
+      <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl text-white font-title">
+        Servicios <span class="text-emerald-400">Informáticos</span>
+      </h1>
+      <p class="mt-6 text-lg text-zinc-300">
+        Reparación, actualización y configuración de PC a domicilio.<br>
+        Software, hardware y armado de PC a medida.<br>
+        <strong class="text-emerald-400">Técnico en computación a domicilio en CABA y alrededores.</strong> <br>
+        <strong class="text-emerald-400">Servicio técnico.</strong>
+      </p>
+     
+    </div>
+    <div class="w-full max-w-md mx-auto">
+      <img src="img/folleto.jpeg" alt="Folleto PCF CompuService" class="w-full h-auto rounded-xl border border-white/10 shadow-2xl object-contain" />
+    </div>
+  </div>
+</section>
+
+<section id="Servicios" class="scroll-mt-20 px-6 py-20 border-b border-white/10">
+  <div class="mx-auto max-w-6xl">
+    <h2 class="text-5xl md:text-6xl font-extrabold text-white text-center tracking-tight mb-16 font-title">
+     Nuestros Servicios
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+      <div class="bg-zinc-900/80 backdrop-blur border border-white/10 rounded-xl p-6 flex flex-col gap-3 hover:border-emerald-500 transition-colors shadow-xl">
+        <div class="w-10 h-10 rounded-lg bg-emerald-500/10 flex items-center justify-center text-emerald-400 text-xl">🖥️</div>
+        <h3 class="text-white font-semibold text-sm">Reparación de PC</h3>
+        <p class="text-zinc-300 text-xs leading-relaxed">Diagnóstico y solución de fallas de hardware y software.</p>
+      </div>
+      <div class="bg-zinc-900/80 backdrop-blur border border-white/10 rounded-xl p-6 flex flex-col gap-3 hover:border-emerald-500 transition-colors shadow-xl">
+        <div class="w-10 h-10 rounded-lg bg-emerald-500/10 flex items-center justify-center text-emerald-400 text-xl">📶</div>
+        <h3 class="text-white font-semibold text-sm">Redes y WiFi</h3>
+        <p class="text-zinc-300 text-xs leading-relaxed">Instalación y configuración de redes domésticas y empresariales.</p>
+      </div>
+      <div class="bg-zinc-900/80 backdrop-blur border border-white/10 rounded-xl p-6 flex flex-col gap-3 hover:border-emerald-500 transition-colors shadow-xl">
+        <div class="w-10 h-10 rounded-lg bg-emerald-500/10 flex items-center justify-center text-emerald-400 text-xl">🛡️</div>
+        <h3 class="text-white font-semibold text-sm">Seguridad y antivirus</h3>
+        <p class="text-zinc-300 text-xs leading-relaxed">Eliminación de virus y protección de tus dispositivos.</p>
+      </div>
+      <div class="bg-zinc-900/80 backdrop-blur border border-white/10 rounded-xl p-6 flex flex-col gap-3 hover:border-emerald-500 transition-colors shadow-xl">
+        <div class="w-10 h-10 rounded-lg bg-emerald-500/10 flex items-center justify-center text-emerald-400 text-xl">☁️</div>
+        <h3 class="text-white font-semibold text-sm">Backup y recuperación</h3>
+        <p class="text-zinc-300 text-xs leading-relaxed">Recuperación de datos y copias de seguridad.</p>
+      </div>
+      <div class="bg-zinc-900/80 backdrop-blur border border-white/10 rounded-xl p-6 flex flex-col gap-3 hover:border-emerald-500 transition-colors shadow-xl">
+        <div class="w-10 h-10 rounded-lg bg-emerald-500/10 flex items-center justify-center text-emerald-400 text-xl">⚙️</div>
+        <h3 class="text-white font-semibold text-sm">Mantenimiento</h3>
+        <p class="text-zinc-300 text-xs leading-relaxed">Limpieza y mantenimiento preventivo de equipos a particulares y empresas.</p>
+      </div>
+      <div class="bg-zinc-900/80 backdrop-blur border border-white/10 rounded-xl p-6 flex flex-col gap-3 hover:border-emerald-500 transition-colors shadow-xl">
+        <div class="w-10 h-10 rounded-lg bg-emerald-500/10 flex items-center justify-center text-emerald-400 text-xl">📷</div>
+        <h3 class="text-white font-semibold text-sm">Cámaras de seguridad</h3>
+        <p class="text-zinc-300 text-xs leading-relaxed">Instalación y configuración de sistemas de videovigilancia.</p>
+      </div>
+    </div>
+
+    <div class="bg-zinc-900/90 backdrop-blur border border-white/10 rounded-xl p-8 text-center shadow-xl">
+      <p class="text-white font-semibold text-lg mb-2">¿No encontrás lo que necesitás?</p>
+      <p class="text-zinc-300 text-sm mb-5">Consultá por tu equipo, te ayudamos sin compromiso.</p>
+      <a href="#Contacto">
+        <button class="bg-emerald-600 text-white font-semibold px-8 py-2 rounded cursor-pointer hover:bg-emerald-500 transition-colors">
+          Contactanos
+        </button>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="Trabajos" class="scroll-mt-20 px-6 py-20 border-b border-white/10">
+  <div class="mx-auto max-w-6xl">
+    <h2 class="text-5xl md:text-6xl font-extrabold text-white text-center tracking-tight mb-4 font-title">
+      Trabajos Realizados
+    </h2>
+    <p class="text-center text-zinc-300 text-sm mb-12">Equipos armados, reparados y a punto por PCF</p>
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+      <img src="img/compu1.jpeg" alt="Notebook reparada por PCF" class="w-full h-48 object-cover rounded-xl border border-white/10 hover:border-emerald-500 transition-colors shadow-md" />
+      <img src="img/compu2.jpeg" alt="Reparación de notebook - placa madre" class="w-full h-48 object-cover rounded-xl border border-white/10 hover:border-emerald-500 transition-colors shadow-md" />
+      <img src="img/compu3.jpeg" alt="PC gamer RGB armada por PCF" class="w-full h-48 object-cover rounded-xl border border-white/10 hover:border-emerald-500 transition-colors shadow-md" />
+      <img src="img/compu4.jpeg" alt="Setup gamer ThunderX3 armado por PCF" class="w-full h-48 object-cover rounded-xl border border-white/10 hover:border-emerald-500 transition-colors shadow-md" />
+      <img src="img/compu5.jpeg" alt="Notebook con upgrade de SSD" class="w-full h-48 object-cover rounded-xl border border-white/10 hover:border-emerald-500 transition-colors shadow-md" />
+      <img src="img/compu6.jpeg" alt="Interior de PC gamer con RGB rojo" class="w-full h-48 object-cover rounded-xl border border-white/10 hover:border-emerald-500 transition-colors shadow-md" />
+      <img src="img/compu7.jpeg" alt="Reparación interna de notebook" class="w-full h-48 object-cover rounded-xl border border-white/10 hover:border-emerald-500 transition-colors shadow-md" />
+      <a href="#Contacto" class="w-full h-48 rounded-xl border border-dashed border-emerald-400 bg-zinc-900/50 backdrop-blur flex flex-col items-center justify-center gap-2 text-emerald-400 hover:bg-emerald-500/10 transition-colors shadow-md">
+        <i class="fa-solid fa-plus text-xl"></i>
+        <span class="text-xs font-semibold text-center px-2">¿Querés tu equipo así? Consultanos</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<section id="Quiénes-somos" class="scroll-mt-20 px-6 py-24 border-b border-white/10">
+  <div class="mx-auto max-w-6xl">
+    <h2 class="text-5xl md:text-6xl font-extrabold text-white text-center tracking-tight mb-4 font-title">
+      ¿Por qué elegirnos?
+    </h2>
+    <p class="text-center text-zinc-300 text-sm mb-4">Lo que dicen nuestros clientes</p>
+
+    <div class="flex items-center justify-center gap-3 mb-12">
+      <span class="text-yellow-400 text-xl tracking-widest">★★★★★</span>
+      <span class="text-white font-semibold text-base">4.9</span>
+      <span class="text-zinc-300 text-sm">· +200 reseñas en Google</span>
+    </div>
+
+    <div class="overflow-hidden">
+      <div id="slider-track" class="flex transition-transform duration-500 ease-in-out">
+        <!-- Opinión 1 -->
+        <div class="w-full flex-shrink-0 flex justify-center px-4">
+          <div class="w-full max-w-xl bg-white/95 backdrop-blur border border-white/10 rounded-xl p-6 shadow-xl">
+            <div class="text-yellow-500 text-sm mb-3">★★★★★</div>
+            <p class="text-zinc-800 text-sm leading-relaxed mb-5">
+              "Excelente servicio. Contestó rápido, vino puntual y asesoró bien con lo que me sucedía en la PC. Lo llamaría de vuelta ante otra dificultad."
+            </p>
+            <div class="flex items-center gap-3">
+              <div class="w-9 h-9 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-700 text-xs font-semibold">FY</div>
+              <div>
+                <p class="text-zinc-900 text-sm font-semibold">Francisco Yelmini</p>
+                <p class="text-zinc-500 text-xs">hace 1 mes</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Opinión 2 -->
+        <div class="w-full flex-shrink-0 flex justify-center px-4">
+          <div class="w-full max-w-xl bg-white/95 backdrop-blur border border-white/10 rounded-xl p-6 shadow-xl">
+            <div class="text-yellow-500 text-sm mb-3">★★★★★</div>
+            <p class="text-zinc-800 text-sm leading-relaxed mb-5">
+              "Excelente atención y servicio. Enseguida me contestó el mensaje y coordinamos para una visita al día siguiente. Me solucionó el problema con la computadora y además me arregló una cámara de seguridad."
+            </p>
+            <div class="flex items-center gap-3">
+              <div class="w-9 h-9 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-700 text-xs font-semibold">PP</div>
+              <div>
+                <p class="text-zinc-900 text-sm font-semibold">PATRICIA PATOBETO</p>
+                <p class="text-zinc-500 text-xs">hace 2 meses</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Opinión 3 -->
+        <div class="w-full flex-shrink-0 flex justify-center px-4">
+          <div class="w-full max-w-xl bg-white/95 backdrop-blur border border-white/10 rounded-xl p-6 shadow-xl">
+            <div class="text-yellow-500 text-sm mb-3">★★★★★</div>
+            <p class="text-zinc-800 text-sm leading-relaxed mb-5">
+              "Recomiendo totalmente el servicio técnico de Federico. Acudió a mi domicilio para reparar mi PC y la experiencia fue excelente. Destaco su puntualidad y la sinceridad con la que explicó el problema. Fue muy rápido en la solución, respetuoso en todo momento y me dio recomendaciones muy útiles para el cuidado de mi equipo. ¡10/10! "
+            </p>
+            <div class="flex items-center gap-3">
+              <div class="w-9 h-9 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-700 text-xs font-semibold">JC</div>
+              <div>
+                <p class="text-zinc-900 text-sm font-semibold">Joddy Conlago</p>
+                <p class="text-zinc-500 text-xs">hace 2 meses</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Opinión 4 -->
+        <div class="w-full flex-shrink-0 flex justify-center px-4">
+          <div class="w-full max-w-xl bg-white/95 backdrop-blur border border-white/10 rounded-xl p-6 shadow-xl">
+            <div class="text-yellow-500 text-sm mb-3">★★★★★</div>
+            <p class="text-zinc-800 text-sm leading-relaxed mb-5">
+              "La verdad super recomendado, super claro en la reparación que le hizo a mi computadora, super prolijo y educado. Muy contenta con el servicio!!!"
+            </p>
+            <div class="flex items-center gap-3">
+              <div class="w-9 h-9 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-700 text-xs font-semibold">HMG</div>
+              <div>
+                <p class="text-zinc-900 text-sm font-semibold">Helena María Gondellez</p>
+                <p class="text-zinc-500 text-xs">hace 9 meses</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Opinión 5 -->
+        <div class="w-full flex-shrink-0 flex justify-center px-4">
+          <div class="w-full max-w-xl bg-white/95 backdrop-blur border border-white/10 rounded-xl p-6 shadow-xl">
+            <div class="text-yellow-500 text-sm mb-3">★★★★★</div>
+            <p class="text-zinc-800 text-sm leading-relaxed mb-5">
+              "Excelente Tecnico, lo recomiendo!. La pc me daba error una noche y al dia siguiente me la arreglo sin problemas. No perdí ningun archivo y me genero confianza en todo momento. Me explico todo con paciencia.Un genio!"
+            </p>
+            <div class="flex items-center gap-3">
+              <div class="w-9 h-9 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-700 text-xs font-semibold">JL</div>
+              <div>
+                <p class="text-zinc-900 text-sm font-semibold">Julian Ledesma</p>
+                <p class="text-zinc-500 text-xs">hace 2 meses</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex justify-center gap-3 mt-6">
+      <button id="prev-btn" class="w-9 h-9 rounded-full bg-white/10 border border-white/20 text-white hover:bg-white/20 transition cursor-pointer flex items-center justify-center">
+        ←
+      </button>
+      <button id="next-btn" class="w-9 h-9 rounded-full bg-white/10 border border-white/20 text-white hover:bg-white/20 transition cursor-pointer flex items-center justify-center">
+        →
+      </button>
+    </div>
+
+    <div id="dots-container" class="flex justify-center gap-2 mt-4"></div>
+  </div>
+</section>
+
+<section id="Contacto" class="py-16 px-6 border-b border-white/10">
+  <div class="mx-auto max-w-5xl">
+    <div class="flex flex-col items-center justify-center text-center mb-12">
+      <div class="h-20 w-20 rounded-2xl overflow-hidden bg-white border border-white/20 p-1 mb-4 flex items-center justify-center shadow-lg">
+        <img src="img/logo-nuevo.jpeg" alt="PCF Logo" class="h-full w-full object-contain" />
+      </div>
+      <h2 class="text-white text-6xl font-bold mb-4 font-title">PCF</h2>
+      <p class="text-zinc-300 text-lg max-w-2xl">Contanos cuál es el problema con tu PC o notebook. Te responderemos a la brevedad con un diagnóstico inicial y la mejor solución.</p>
+    </div>
+
+   <form action="https://api.web3forms.com/submit" method="POST" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <input type="hidden" name="access_key" value="35420cda-b289-46ff-886e-9890a7257c25">
+      <input type="hidden" name="subject" value="Nueva consulta desde PCF web">
+      <input type="hidden" name="from_name" value="PCF - Formulario web">
+
+      <input type="text" name="nombre" placeholder="* Nombre" required class="bg-zinc-900/80 border border-white/10 text-white placeholder-zinc-400 px-4 py-3 rounded focus:outline-none focus:border-emerald-500">
+      <input type="text" name="direccion" placeholder="Dirección" class="bg-zinc-900/80 border border-white/10 text-white placeholder-zinc-400 px-4 py-3 rounded focus:outline-none focus:border-emerald-500">
+      <input type="tel" name="telefono" placeholder="* Teléfono" required class="bg-zinc-900/80 border border-white/10 text-white placeholder-zinc-400 px-4 py-3 rounded focus:outline-none focus:border-emerald-500">
+      <input type="email" name="email" placeholder="Email" class="bg-zinc-900/80 border border-white/10 text-white placeholder-zinc-400 px-4 py-3 rounded focus:outline-none focus:border-emerald-500">
+      <input type="text" name="asunto" placeholder="* Asunto" required class="bg-zinc-900/80 border border-white/10 text-white placeholder-zinc-400 px-4 py-3 rounded md:col-span-2 focus:outline-none focus:border-emerald-500">
+      <textarea name="mensaje" rows="6" placeholder="* Mensaje" required class="bg-zinc-900/80 border border-white/10 text-white placeholder-zinc-400 px-4 py-3 rounded resize-none md:col-span-2 focus:outline-none focus:border-emerald-500"></textarea>
+
+      <button type="submit" class="md:col-span-2 bg-emerald-600 text-white font-bold py-4 hover:bg-emerald-500 transition duration-300 cursor-pointer rounded">
+        Enviar consulta
+      </button>
+    </form>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mt-16 pt-12 border-t border-white/10">
+      <div>
+        <h3 class="text-white text-2xl font-semibold mb-6">Horarios de atención</h3>
+        <div class="space-y-4 text-zinc-300 text-base">
+          <p class="flex items-center gap-3">
+            <i class="fa-regular fa-clock text-emerald-400 text-xl"></i>
+            <span><strong class="text-white">Lunes a Sábado:</strong> 8:30 hs - 19:30 hs</span>
+          </p>
+          <p class="flex items-center gap-3">
+            <i class="fa-regular fa-clock text-emerald-400 text-xl"></i>
+            <span><strong class="text-white">Domingo:</strong> 9:00 hs - 17:00 hs</span>
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="text-white text-2xl font-semibold mb-6">También podés encontrarnos en</h3>
+        <div class="flex flex-wrap gap-8">
+          <a href="https://wa.me/5491136970130" target="_blank" class="group flex flex-col items-center transition">
+            <i class="fa-brands fa-whatsapp text-4xl text-zinc-400 group-hover:text-emerald-400 transition duration-300"></i>
+            <span class="mt-2 text-zinc-400 text-xs group-hover:text-white transition">WhatsApp</span>
+          </a>
+          <a href="https://instagram.com/informaticapcflores" target="_blank" class="group flex flex-col items-center transition">
+            <i class="fa-brands fa-instagram text-4xl text-zinc-400 group-hover:text-emerald-400 transition duration-300"></i>
+            <span class="mt-2 text-zinc-400 text-xs group-hover:text-white transition">Instagram</span>
+          </a>
+          <a href="https://www.facebook.com/people/Soluciones-Informaticas-PC-Flores/100063929955283/?ref=pages_you_manage#" target="_blank" class="group flex flex-col items-center transition">
+            <i class="fa-brands fa-facebook text-4xl text-zinc-400 group-hover:text-emerald-400 transition duration-300"></i>
+            <span class="mt-2 text-zinc-400 text-xs group-hover:text-white transition">Facebook</span>
+          </a>
+          <a href="https://x.com/informaticapcf" target="_blank" class="group flex flex-col items-center transition">
+            <i class="fa-brands fa-x-twitter text-4xl text-zinc-400 group-hover:text-emerald-400 transition duration-300"></i>
+            <span class="mt-2 text-zinc-400 text-xs group-hover:text-white transition">X</span>
+          </a>
+          <a href="https://medium.com/@informaticapcflores" target="_blank" class="group flex flex-col items-center transition">
+            <i class="fa-brands fa-medium text-4xl text-zinc-400 group-hover:text-emerald-400 transition duration-300"></i>
+            <span class="mt-2 text-zinc-400 text-xs group-hover:text-white transition">Blog</span>
+          </a>
+          <a href="https://www.google.com/maps/place/Tecnico+Computacion+a+domicilio+Pc+Flores/@-34.6410614,-58.3667893,16.5z/data=!4m15!1m8!3m7!1s0x95a334b1a29c61a1:0xb8c95ae80001f81f!2sCarlos+F.+Melo+226,+C1163ACF+Cdad.+Aut%C3%B3noma+de+Buenos+Aires!3b1!8m2!3d-34.6404162!4d-58.3645329!16s%2Fg%2F11jylsmy1q!3m5!1s0x95a334b198113d67:0xfb2158e0f7ae46da!8m2!3d-34.6404346!4d-58.3645408!16s%2Fg%2F1z44qvckh?entry=ttu&g_ep=EgoyMDI2MDYyNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="group flex flex-col items-center transition">
+            <i class="fa-solid fa-location-dot text-4xl text-zinc-400 group-hover:text-emerald-400 transition duration-300"></i>
+            <span class="mt-2 text-zinc-400 text-xs group-hover:text-white transition">Google Maps</span>
+          </a>
+        </div>
+      </div>
+    </div>
+</section>
+
+<footer class="border-t border-white/10 px-6 py-12 text-zinc-400 text-sm">
+  <div class="mx-auto max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 text-center md:text-left">
+    <div>
+      <a href="#Inicio" class="flex items-center justify-center md:justify-start gap-2 mb-3">
+        <div class="h-9 w-9 rounded-xl overflow-hidden bg-white border border-white/20 p-0.5 flex-shrink-0 flex items-center justify-center">
+          <img src="img/logo-nuevo.jpeg" alt="PCF Logo" class="h-full w-full object-contain" />
+        </div>
+      </a>
+      <p class="text-zinc-400 text-xs leading-relaxed">Servicio técnico informático profesional a domicilio y en taller. Soluciones integrales para tus dispositivos.</p>
+    </div>
+    
+    <div class="flex flex-col items-center md:items-start">
+      <h4 class="text-white font-semibold mb-3 text-xs tracking-wider uppercase">Navegación</h4>
+      <ul class="space-y-2 text-xs">
+        <li><a href="#Inicio" class="hover:text-emerald-400 transition-colors">Inicio</a></li>
+        <li><a href="#Servicios" class="hover:text-emerald-400 transition-colors">Servicios</a></li>
+        <li><a href="#Trabajos" class="hover:text-emerald-400 transition-colors">Trabajos</a></li>
+        <li><a href="#Quiénes-somos" class="hover:text-emerald-400 transition-colors">Por qué elegirnos</a></li>
+        <li><a href="#Contacto" class="hover:text-emerald-400 transition-colors">Contacto</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="text-white font-semibold mb-3 text-xs tracking-wider uppercase">Contacto Directo</h4>
+      <p class="text-xs text-zinc-400 mb-1">¿Urgencias técnicas?</p>
+      <a href="https://wa.me/5491136970130" target="_blank" class="text-emerald-400 hover:underline text-xs block mb-2">
+        <i class="fa-brands fa-whatsapp mr-1"></i> +54 9 11 3697-0130
+      </a>
+      <p class="text-xs text-zinc-400">Buenos Aires, Argentina</p>
+    </div>
+  </div>
+
+  <div class="mx-auto max-w-6xl border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-zinc-500">
+    <p>© 2026 PCF CompuService. Todos los derechos reservados.</p>
+    <p>Diseño web profesional</p>
+  </div>
+</footer>
+ 
+</div>
+
+<script>
+const menuBtn = document.getElementById("menu-btn");
+const menu = document.getElementById("menu");
+const menuIcon = document.getElementById("menu-icon");
+const navLinks = document.querySelectorAll(".nav-link");
+
+function toggleMenu() {
+    menu.classList.toggle("translate-x-full");
+    if(menu.classList.contains("translate-x-full")) {
+        menuIcon.className = "fa-solid fa-bars";
+    } else {
+        menuIcon.className = "fa-solid fa-xmark";
+    }
+}
+
+menuBtn.addEventListener("click", toggleMenu);
+
+navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        if (!menu.classList.contains("translate-x-full")) {
+            toggleMenu();
+        }
+    });
+});
+
+const track = document.getElementById("slider-track");
+const cards = [...track.children];
+const dotsContainer = document.getElementById("dots-container");
+
+let current = 0;
+
+function updateSlider() {
+  if (track) {
+      track.style.transform = `translateX(-${current * 100}%)`;
+  }
+  if (dotsContainer) {
+    [...dotsContainer.children].forEach((dot, i) => {
+        dot.classList.toggle("bg-emerald-600", i === current);
+        dot.classList.toggle("bg-zinc-300", i !== current);
+    });
+  }
+}
+
+function buildDots() {
+  if (!dotsContainer) return;
+  dotsContainer.innerHTML = "";
+  cards.forEach((_, i) => {
+    const dot = document.createElement("button");
+    dot.className =
+      "w-2 h-2 rounded-full transition-colors cursor-pointer " +
+      (i === current ? "bg-emerald-600" : "bg-zinc-300");
+
+    dot.onclick = () => {
+      current = i;
+      updateSlider();
+    };
+    dotsContainer.appendChild(dot);
+  });
+}
+
+if (document.getElementById("next-btn")) {
+    document.getElementById("next-btn").onclick = () => {
+      if (current < cards.length - 1) {
+        current++;
+        updateSlider();
+      }
+    };
+}
+
+if (document.getElementById("prev-btn")) {
+    document.getElementById("prev-btn").onclick = () => {
+      if (current > 0) {
+        current--;
+        updateSlider();
+      }
+    };
+}
+
+buildDots();
+updateSlider();
+</script>
+
+</body>
+</html>
