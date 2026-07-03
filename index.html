@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">    
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { font-family: 'Inter', sans-serif; }
-        .font-title { font-family: 'Syne', sans-serif; }
+        body { font-family: 'Inter', sans-serif; font-weight: 400; }
+        .font-title { font-family: 'Inter', sans-serif; font-weight: 600; }
     </style>
     <title>PCF | Servicios Informáticos</title>
 </head>
@@ -58,7 +58,7 @@
       <div class="h-24 w-24 rounded-2xl overflow-hidden bg-white p-1 border border-white/20 mx-auto mb-6 flex items-center justify-center shadow-lg">
         <img src="img/logo-nuevo.jpeg" alt="PCF Logo" class="h-full w-full object-contain" />
       </div>
-      <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl text-white font-title">
+      <h1 class="text-4xl font-semibold tracking-tight sm:text-5xl text-white font-title">
         Servicios <span class="text-emerald-400">Informáticos</span>
       </h1>
       <p class="mt-6 text-lg text-zinc-300">
@@ -77,7 +77,7 @@
 
 <section id="Servicios" class="scroll-mt-20 px-6 py-20 border-b border-white/10">
   <div class="mx-auto max-w-6xl">
-    <h2 class="text-5xl md:text-6xl font-extrabold text-white text-center tracking-tight mb-16 font-title">
+    <h2 class="text-5xl md:text-6xl font-semibold text-white text-center tracking-tight mb-16 font-title">
      Nuestros Servicios
     </h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
@@ -117,7 +117,7 @@
       <p class="text-white font-semibold text-lg mb-2">¿No encontrás lo que necesitás?</p>
       <p class="text-zinc-300 text-sm mb-5">Consultá por tu equipo, te ayudamos sin compromiso.</p>
       <a href="#Contacto">
-        <button class="bg-emerald-600 text-white font-semibold px-8 py-2 rounded cursor-pointer hover:bg-emerald-500 transition-colors">
+        <button class="bg-emerald-600 text-white font-medium px-8 py-2 rounded cursor-pointer hover:bg-emerald-500 transition-colors">
           Contactanos
         </button>
       </a>
@@ -127,7 +127,7 @@
 
 <section id="Trabajos" class="scroll-mt-20 px-6 py-20 border-b border-white/10">
   <div class="mx-auto max-w-6xl">
-    <h2 class="text-5xl md:text-6xl font-extrabold text-white text-center tracking-tight mb-4 font-title">
+    <h2 class="text-5xl md:text-6xl font-semibold text-white text-center tracking-tight mb-4 font-title">
       Trabajos Realizados
     </h2>
     <p class="text-center text-zinc-300 text-sm mb-12">Equipos armados, reparados y a punto por PCF</p>
@@ -150,7 +150,7 @@
 
 <section id="Quiénes-somos" class="scroll-mt-20 px-6 py-24 border-b border-white/10">
   <div class="mx-auto max-w-6xl">
-    <h2 class="text-5xl md:text-6xl font-extrabold text-white text-center tracking-tight mb-4 font-title">
+    <h2 class="text-5xl md:text-6xl font-semibold text-white text-center tracking-tight mb-4 font-title">
       ¿Por qué elegirnos?
     </h2>
     <p class="text-center text-zinc-300 text-sm mb-4">Lo que dicen nuestros clientes</p>
@@ -247,10 +247,10 @@
     </div>
 
     <div class="flex justify-center gap-3 mt-6">
-      <button id="prev-btn" class="w-9 h-9 rounded-full bg-white/10 border border-white/20 text-white hover:bg-white/20 transition cursor-pointer flex items-center justify-center">
+      <button id="prev-btn" class="w-9 h-9 rounded-full bg-white/10 border border-white/20 text-white font-medium hover:bg-white/20 transition cursor-pointer flex items-center justify-center">
         ←
       </button>
-      <button id="next-btn" class="w-9 h-9 rounded-full bg-white/10 border border-white/20 text-white hover:bg-white/20 transition cursor-pointer flex items-center justify-center">
+      <button id="next-btn" class="w-9 h-9 rounded-full bg-white/10 border border-white/20 text-white font-medium hover:bg-white/20 transition cursor-pointer flex items-center justify-center">
         →
       </button>
     </div>
@@ -265,7 +265,7 @@
       <div class="h-20 w-20 rounded-2xl overflow-hidden bg-white border border-white/20 p-1 mb-4 flex items-center justify-center shadow-lg">
         <img src="img/logo-nuevo.jpeg" alt="PCF Logo" class="h-full w-full object-contain" />
       </div>
-      <h2 class="text-white text-6xl font-bold mb-4 font-title">PCF</h2>
+      <h2 class="text-white text-6xl font-semibold mb-4 font-title">PCF</h2>
       <p class="text-zinc-300 text-lg max-w-2xl">Contanos cuál es el problema con tu PC o notebook. Te responderemos a la brevedad con un diagnóstico inicial y la mejor solución.</p>
     </div>
 
@@ -281,7 +281,7 @@
       <input type="text" name="asunto" placeholder="* Asunto" required class="bg-zinc-900/80 border border-white/10 text-white placeholder-zinc-400 px-4 py-3 rounded md:col-span-2 focus:outline-none focus:border-emerald-500">
       <textarea name="mensaje" rows="6" placeholder="* Mensaje" required class="bg-zinc-900/80 border border-white/10 text-white placeholder-zinc-400 px-4 py-3 rounded resize-none md:col-span-2 focus:outline-none focus:border-emerald-500"></textarea>
 
-      <button type="submit" class="md:col-span-2 bg-emerald-600 text-white font-bold py-4 hover:bg-emerald-500 transition duration-300 cursor-pointer rounded">
+      <button type="submit" class="md:col-span-2 bg-emerald-600 text-white font-medium py-4 hover:bg-emerald-500 transition duration-300 cursor-pointer rounded">
         Enviar consulta
       </button>
     </form>
